@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Customer Love | Storefries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="email" content="" />
+    <meta name="website" content="" />
+    <meta name="Version" content="v3.2.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- tobii css -->
+    <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+</head>
+
+<body>
+    <!-- Loader -->
+     <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div> 
+    <!-- Loader -->
+    
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" height="50" class="logo-light-mode" alt="">
+                <img src="images/logo.png" height="50" class="logo-dark-mode" alt="">
+            </a>
+            <div class="buy-button">
+                <a href="https://app.storefries.com" target="_blank" class="btn btn-primary">Get Started</a>
+            </div><!--end login button-->
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            <div id="navigation">
+                <!-- Navigation Menu-->   
+                <ul class="navigation-menu">
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head"><img src="images/Conent.png" style="width: 15%;"> Content</li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Discover The Trending <br>Content For Your Location<br> Needs And Influence The <br>Brand With Designing Tools.</a></li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Learn more...</a></li>                                    
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head"><img src="images/publishing.png" style="width: 15%;">Publishing</li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Simple Way To Plan, <br>Schedule And Publish To <br>Customers First On The Fly <br>And Amplify The Post To <br>Reach More Audience.</a></li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Learn more...</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head"><img src="images/engagement.png" style="width: 15%;">Engagement</li>
+                                    <li><a href="portfolio-grid-two.html" class="sub-menu-item">All In One Tool To Manage<br> The Interactions Efficiently.</a></li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Learn more...</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head"><img src="images.png" style="width: 15%;">Insight</li>
+                                    <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Visually Identify Which <br>Channels Are Performing <br>Better, Identify The ROI For<br> Marketing Spend.</a></li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Learn more...</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="text-center">
+                                    <li class="megamenu-head"></li>
+                                    <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Powerful tools to <br>scale growing businesses <br>across:</a></li>
+                                    
+                                    <li class="list-inline-item"><a href="" class="btn btn-sm btn-outline-blue" ><i data-feather="facebook" class="icons"></i></a></li>
+                                    <li class="list-inline-item"><a href="" class="btn btn-sm btn-outline-danger" ><i data-feather="instagram" class="icons"></i></a></li>
+                                    <br>
+                                    <li class="list-inline-item"><a href="" class="btn btn-sm btn-outline-secondary" ><i data-feather="linkedin" class="icons"></i></a></li>
+                                    <li class="list-inline-item"><a href="" class="btn btn-sm btn-outline-info" ><i data-feather="twitter" class="icons"></i></a></li><!--
+                                    <li class="list-inline-item mx-2 mt-3"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-lg btn-danger" data-bs-toggle="tooltip" data-bs-placement="top"><i data-feather="instagram" class="icons"></i></a></li>
+                                    <li class="list-inline-item mx-2 mt-3"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-lg btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"><i data-feather="linkedin" class="icons"></i></a></li>
+                                    <li class="list-inline-item mx-2 mt-3"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-lg btn-info" data-bs-toggle="tooltip" data-bs-placement="top"><i data-feather="twitter" class="icons"></i></a></li>
+                                    <li class="list-inline-item mx-2 mt-3"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-lg btn-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Gitlab"><i data-feather="gitlab" class="icons"></i></a></li>
+                                    <li class="list-inline-item mx-2 mt-3"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-lg btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Youtube"><i data-feather="youtube" class="icons"></i></a></li>
+                                    <li class="list-inline-item mx-2 mt-3"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-lg btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp"><i class="mdi mdi-whatsapp icons"></i></a></li>
+                                    <li class="list-inline-item mx-2 mt-3"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-lg btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram"><i class="mdi mdi-telegram icons"></i></a></li>
+                                    <li class="list-inline-item mx-2 mt-3"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-lg btn-blue" data-bs-toggle="tooltip" data-bs-placement="top" title="Skype"><i class="mdi mdi-skype icons"></i></a></li>-->
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Feature</a><span class="menu-arrow"></span>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Modern Portfolio</li>
+                                    <li><a href="portfolio-modern-two.html" class="sub-menu-item">Two Column</a></li>
+                                    <li><a href="portfolio-modern-three.html" class="sub-menu-item">Three Column</a></li>
+                                    <li><a href="portfolio-modern-four.html" class="sub-menu-item">Four Column</a></li>
+                                    <li><a href="portfolio-modern-five.html" class="sub-menu-item">Five Column</a></li>
+                                    <li><a href="portfolio-modern-six.html" class="sub-menu-item">Six Column</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Classic Portfolio</li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Two Column</a></li>
+                                    <li><a href="portfolio-classic-three.html" class="sub-menu-item">Three Column</a></li>
+                                    <li><a href="portfolio-classic-four.html" class="sub-menu-item">Four Column</a></li>
+                                    <li><a href="portfolio-classic-five.html" class="sub-menu-item">Five Column</a></li>
+                                    <li><a href="portfolio-classic-six.html" class="sub-menu-item">Six Column</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Grid Portfolio</li>
+                                    <li><a href="portfolio-grid-two.html" class="sub-menu-item">Two Column</a></li>
+                                    <li><a href="portfolio-grid-three.html" class="sub-menu-item">Three Column</a></li>
+                                    <li><a href="portfolio-grid-four.html" class="sub-menu-item">Four Column</a></li>
+                                    <li><a href="portfolio-grid-five.html" class="sub-menu-item">Five Column</a></li>
+                                    <li><a href="portfolio-grid-six.html" class="sub-menu-item">Six Column</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Masonry Portfolio</li>
+                                    <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Two Column</a></li>
+                                    <li><a href="portfolio-masonry-three.html" class="sub-menu-item">Three Column</a></li>
+                                    <li><a href="portfolio-masonry-four.html" class="sub-menu-item">Four Column</a></li>
+                                    <li><a href="portfolio-masonry-five.html" class="sub-menu-item">Five Column</a></li>
+                                    <li><a href="portfolio-masonry-six.html" class="sub-menu-item">Six Column</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Portfolio Detail</li>
+                                    <li><a href="portfolio-detail-one.html" class="sub-menu-item">Portfolio One</a></li>
+                                    <li><a href="portfolio-detail-two.html" class="sub-menu-item">Portfolio Two</a></li>
+                                    <li><a href="portfolio-detail-three.html" class="sub-menu-item">Portfolio Three</a></li>
+                                    <li><a href="portfolio-detail-four.html" class="sub-menu-item">Portfolio Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="pricing.html">Pricing</a>                            
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Resources</a><span class="menu-arrow"></span>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head"><img src="images/publishing.png" style="width: 15%;">Publishing</li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Simple Way To Plan, <br>Schedule And Publish To <br>Customers First On The Fly <br>And Amplify The Post To <br>Reach More Audience.</a></li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Learn more...</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head"><img src="images/engagement.png" style="width: 15%;">Engagement</li>
+                                    <li><a href="portfolio-grid-two.html" class="sub-menu-item">All In One Tool To Manage<br> The Interactions Efficiently.</a></li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Learn more...</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head"><img src="images.png" style="width: 15%;">Insight</li>
+                                    <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Visually Identify Which <br>Channels Are Performing <br>Better, Identify The ROI For<br> Marketing Spend.</a></li>
+                                    <li><a href="portfolio-classic-two.html" class="sub-menu-item">Learn more...</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="text-center">
+                                    
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-menu-item">
+                        <a href="customer.html" style="color: #2f55d4 ;">Customer</a>                        
+                    </li>
+                </ul><!--end navigation menu-->
+                <div class="buy-menu-btn d-none">
+                    <a href="https://app.storefries.com" target="_blank" class="btn btn-primary">Get Started</a>
+                </div><!--end login button-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+
+
+        <!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h1 class="title"> #StorefriesLove </h1>
+                            <h2>Hear what <span class="text-success fw-bold"><span class="counter-value" data-target="555">1</span>+</span> brands & business <br>love about using Storefries</h2>
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                        <li class="breadcrumb-item"><a href="index.html">Storefries</a></li>
+                                        
+                                        <li class="breadcrumb-item active" aria-current="page">Customer Feedback</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        <!-- Blog STart -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h2 class="title"> Hear more from people like you </h2>                            
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+                <h1 class="title"> </h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/01.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Customer Tweets & Feedback</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/02.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Customer Tweets & Feedback</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/03.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Customer Tweets & Feedback</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/04.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Customer Tweets & Feedback</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/05.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Customer Tweets & Feedback</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/06.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Customer Tweets & Feedback</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/07.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Customer Tweets & Feedback</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                        <div class="card blog rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/blog/08.jpg" class="card-img-top" alt="...">
+                                <div class="overlay rounded-top bg-dark"></div>
+                            </div>
+                            <div class="card-body content">
+                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Customer Tweets & Feedback</a></h5>
+                                <div class="post-meta d-flex justify-content-between mt-3">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
+                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="author">
+                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
+                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 13th August, 2019</small>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Blog End -->
+
+    <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a href="#" class="logo-footer">
+                            <img src="images/logo3-light.svg" height="75" alt="">
+                        </a>
+                        <p class="mt-4">Start working with Storefries that can provide everything you need to engage, discover, plan & connect</p>
+                        <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Company</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Customers</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Community</a></li>
+                            <li><a href="page-pricing.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Request a service</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Careers</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Accessibility</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Press</a></li>
+                        </ul>
+                    </div><!--end col-->
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Support</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Help Center</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Webinar</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Tutorial</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Tweet @ us</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Status</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Android / iOS App</a></li>
+                        </ul>
+                    </div><!--end col-->
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Product</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="faq.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> FAQs</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> System Status</a></li>
+                            <li><a href="blogs.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blogs</a></li>
+                        </ul>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Integrations</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Facebook Integrations</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Twitter Integrations</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Instagram Integrations</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> LinkedIn Integrations</a></li>
+                            <li><a href="" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> All Integrations</a></li>
+                        </ul>
+                    </div><!--end col-->
+                    
+
+                    <!--<div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Newsletter</h5>
+                        <p class="mt-4">Sign up and receive the latest tips via email.</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="foot-subscribe mb-3">
+                                        <label class="form-label">Write your email <span class="text-danger">*</span></label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="mail" class="fea icon-sm icons"></i>
+                                            <input type="email" name="email" id="emailsubscribe" class="form-control ps-5 rounded" placeholder="Your email : " required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="d-grid">
+                                        <input type="submit" id="submitsubscribe" name="send" class="btn btn-soft-primary" value="Subscribe">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Storefries. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://www.aikyne.com/" target="_blank" class="text-reset">Aikyne</a>.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/american-ex.png" class="avatar avatar-ex-sm" title="American Express" alt=""></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/discover.png" class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/master-card.png" class="avatar avatar-ex-sm" title="Master Card" alt=""></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/paypal.png" class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/payments/visa.png" class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- tobii js -->
+    <script src="js/tobii.min.js "></script>
+    <!-- Contact Js -->
+    <script src="js/contact.js"></script>
+    <!-- Icons -->
+    <script src="js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+</html>
